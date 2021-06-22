@@ -20,3 +20,10 @@ The runtime performance of keplerMinMax as well as fminbnd should be printed to 
 
 Next, a relative position error plot is displayed with the absolute difference in altitude minima and maxima values between implementations as shown below
 ![GitHub Logo](relPosErrOblate.jpg)
+
+
+The main C routine is callable from C/C++ and accessible from keplerMinMax.c
+
+        keplerMinMax(r0, v0, rf, vf, tf, mu, Re, Rp, Npts, minAlt, maxAlt);
+
+ 
