@@ -33,4 +33,4 @@ The main C routine is direclty accessible from C/C++ and included in keplerMinMa
 
         keplerMinMax(r0, v0, rf, vf, tf, mu, Re, Rp, Npts, minAlt, maxAlt);
 
- keplerMinMax performs a preliminary check on the equatorial and polar radius; if Re = Rp then keplerMinMaxSphere() is invoked within keplerMinMax to save computational overhead. 
+A preliminary check on the equatorial and polar radius of the spheroid is performed internally; if Re == Rp, then keplerMinMaxSphere() is invoked within to save computational overhead. 
