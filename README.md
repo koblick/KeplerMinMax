@@ -34,3 +34,7 @@ The C routine is direclty accessible and included in keplerMinMax.c for inline f
         keplerMinMax(r0, v0, rf, vf, tf, mu, Re, Rp, Npts, minAlt, maxAlt);
 
 A preliminary check on the equatorial and polar radius of the spheroid is performed internally; if Re = Rp, then keplerMinMaxSphere() is invoked within to save computational overhead. 
+
+References:
+
+Koblick, Darin C. "Novel Closed Form Solution for Orbit Segment Altitude Extrema Over Spherical and Oblate Central Bodies." AMOS 2021 (2021): 10.
