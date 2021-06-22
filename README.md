@@ -33,9 +33,7 @@ The C routine is direclty accessible and included in keplerMinMax.c for inline f
 
         keplerMinMax(r0, v0, rf, vf, tf, mu, Re, Rp, Npts, minAlt, maxAlt);
 
-A preliminary check on the equatorial and polar radius of the spheroid is performed internally; if Re = Rp, then keplerMinMaxSphere() is invoked within to save computational overhead. 
-
-A direct inline function call to the spherical altitude routine is done via
+A preliminary check on the equatorial and polar radius of the spheroid is performed internally; if Re = Rp, then keplerMinMaxSphere is invoked within to save computational overhead.  A direct inline function call to the spherical altitude routine, keplerMinMaxSphere, can be performed as follows
 
        keplerMinMaxSphere(r0, v0, rf, vf, tf, mu, R, minAlt, maxAlt);
 
