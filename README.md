@@ -4,3 +4,10 @@ A novel closed-form solution to compute the surface altitude extrema for any two
 This repository contains a c code implementation of keplerMinMax as outlined in the 2021 AMOS conference paper Novel Closed Form Solution for Orbit Segment Altitude Extrema Over Spherical and Oblate Central Bodies, it also has a MATLAB-C wrapper which allows for calling in a MATLAB environment. To compile a C MEX file in your MATLAB environment, execute the following command in your MATLAB command window:
 
     >> mex keplerMinMaxMex.c keplerMinMax.c
+    
+Once the C code is compiled into a MEX file, run the demo script to verify your configuration
+
+    >> keplerMinMaxDemo()
+    
+    
+The runtime performance of keplerMinMax as well as fminbnd should be printed to your MATLAB Comand Window and you should see the relative position accuracy between implementations.
