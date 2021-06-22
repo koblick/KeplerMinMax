@@ -15,12 +15,12 @@ The MATLAB MEX adapter, keplerMinMaxAdapter.m, is the MATLAB interface routine f
 r0 is an N-Dimensional position state vector, and its dimensions must be identical to those of v0, rf, and vf.  The singleton dimension specifier, dim3, indicates which dimension corresponds to [x,y,z], tf must have identical dimensions to r0, v0, rf, vf except for it's singleton dimension which should be unity instead of three.
     
     
-Once the C code is compiled into a MEX file, run the demo script to verify your configuration
+Once the C code is compiled into a MEX file, run the demo script to verify the configuration
 
     >> keplerMinMaxDemo();
     
     
-The runtime performance of keplerMinMax as well as fminbnd should be printed to your MATLAB Comand Window and you should see the relative position accuracy between implementations.
+The runtime performance of keplerMinMax as well as fminbnd should be printed to the MATLAB Comand Window similar to
 
     >> keplerMinMaxDemo:: keplerMinMax Execution Time = 0.038463 [s]
     >> keplerMinMaxDemo:: fminbnd Execution Time =  66.5425 [s]
