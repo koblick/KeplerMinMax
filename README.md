@@ -10,7 +10,13 @@ This repository contains a c code implementation of keplerMinMax as outlined in 
     
 Once the C code is compiled into a MEX file, run the demo script to verify your configuration
 
-    >> keplerMinMaxDemo()
+    >> keplerMinMaxDemo();
     
     
 The runtime performance of keplerMinMax as well as fminbnd should be printed to your MATLAB Comand Window and you should see the relative position accuracy between implementations.
+
+    >> keplerMinMaxDemo:: keplerMinMax Execution Time = 0.038463 [s]
+    >> keplerMinMaxDemo:: fminbnd Execution Time =  66.5425 [s]
+
+Next, a relative position error plot is displayed with the absolute difference in altitude minima and maxima values between implementations as shown below
+![GitHub Logo](relPosErrOblate.jpg)
