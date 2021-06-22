@@ -29,8 +29,8 @@ Next, a relative position error plot is displayed with the absolute difference i
 ![GitHub Logo](relPosErrOblate.jpg)
 
 
-The main C routine is direclty accessible from C/C++ and included in keplerMinMax.c such that
+The C routine is direclty accessible and included in keplerMinMax.c for inline function calls via
 
         keplerMinMax(r0, v0, rf, vf, tf, mu, Re, Rp, Npts, minAlt, maxAlt);
 
-A preliminary check on the equatorial and polar radius of the spheroid is performed internally; if Re == Rp, then keplerMinMaxSphere() is invoked within to save computational overhead. 
+A preliminary check on the equatorial and polar radius of the spheroid is performed internally; if Re = Rp, then keplerMinMaxSphere() is invoked within to save computational overhead. 
