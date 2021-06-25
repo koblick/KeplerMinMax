@@ -130,7 +130,7 @@ rfMag = vmag(rf);
   {
       maxAlt[0] = fmax(r0Mag,rfMag)-R;
   }
-  if ((isAngBetween(0,nu0,nuf) == 0) & ((N < 1) | eMag >= 1))
+  if ((isAngBetween(0,nu0,nuf) == 0) & ((N < 1) | (eMag >= 1)))
   {
       minAlt[0] = fmin(r0Mag,rfMag)-R;
   }
